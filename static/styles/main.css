@@ -1,7 +1,7 @@
-
-    /* Login */
+/* Login */
     .my_login {
-        width: 30%;
+        width: 90%;
+        max-width: 420px;
         margin: auto;
         margin-top: 100px;
         height: auto;
@@ -20,7 +20,8 @@
 
     /* Sign */
     .my_signin {
-        width: 30%;
+        width: 90%;
+        max-width: 420px;
         margin: auto;
         margin-top: 50px;
         height: auto;
@@ -37,7 +38,13 @@
         padding: 0 15px;
     }
     
-      /* Admin Dashboard */ 
+    /* Phones: less empty space above the login/register cards */
+    @media (max-width: 576px) {
+        .my_login  { margin-top: 40px; }
+        .my_signin { margin-top: 20px; }
+    }
+
+      /* Admin Dashboard */
 /* Light blue background color to match the doctor page */
 body {
     background-color: #e0f7fa !important; 
@@ -83,4 +90,3 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-top: 5%;
 }
-
