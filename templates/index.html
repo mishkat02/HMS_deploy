@@ -100,6 +100,16 @@
             }
         }
 
+        /* Phones: smaller header and hero text so nothing feels cramped */
+        @media (max-width: 576px) {
+            .header-nav { padding: 0.75rem 1rem; }
+            .logo { font-size: 1.5rem; }
+            .nav-buttons a { padding: 0.4rem 0.75rem; }
+            .hero-section { padding: 8% 6%; }
+            .hero-title { font-size: 220%; }
+            .hero-description { font-size: 110%; max-width: 100%; }
+        }
+
         .hero-title .highlight {
             color: #2563EB; /* This was text-blue-600 */
         }
