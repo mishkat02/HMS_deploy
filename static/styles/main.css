@@ -90,3 +90,56 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-top: 5%;
 }
+
+/* ===== Phones: dashboards, availability, history, booking, forms ===== */
+@media (max-width: 576px) {
+    body {
+        padding: 10px 8px;
+    }
+
+    /* Cards: less padding so content gets the screen width */
+    .main-card {
+        padding: 16px;
+    }
+    .p_main-card {
+        padding: 16px;
+        margin-top: 10px;
+    }
+
+    /* List rows (doctors, patients, departments): name on top, buttons wrap underneath */
+    .list-group-item.d-flex {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .item-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 8px;
+    }
+    .item-actions form {
+        display: inline-block !important;
+    }
+
+    /* Tables: scroll sideways inside the card instead of breaking the page */
+    .appointment-table,
+    .schedule-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Side-by-side form fields (update treatment page) stack on phones */
+    .form-row > .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Rows of action buttons wrap rather than overflow */
+    .main-card .d-flex.justify-content-between,
+    .main-card .d-flex.justify-content-end {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}
